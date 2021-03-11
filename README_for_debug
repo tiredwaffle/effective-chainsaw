@@ -1,0 +1,27 @@
+Everything you need to try to understand how from two table we get the queries for evolution of formulas. 
+While I was writing this code, only I and god knew how this works. Now only god knows.
+I left some comments though. I wish you all of the best luck with debug. 
+
+
+
+Aliases (so you and me talk on the same language)
+
+1. First level formulas
+    UE_THROUGHPUT_DL = [NUE_THROUGHPUT_DL_KBIT / DUE_THROUGHPUT_DL]
+2. First level counters
+    NUE_THROUGHPUT_DL_KBIT, DUE_THROUGHPUT_DL
+3. Second level formulas
+    NUE_THROUGHPUT_UL_KBIT = (8*((M8012C91+M8012C93+M8012C95+M8012C97+...
+4. Second level counters
+    M8012C91, M8012C93, M8012C95...
+
+
+
+The order in which I recommend get acquainted with the project:
+
+1. The README file.                               <----  you are here now  ----
+2. The main_notebook Jupyter notebook. I left some comments on general logic there (I left many hours of my young life there as well).
+3. helpers_demo Jupyter notebook. Just to understand what every function is supposed to do, and locate why and where the problems started.
+4. Library Helpers. All main functions lives there. With comments. On almost every line.
+5. Alexandr Semenov. He knows general aproach.
+6. God I suppose? If it didn't become clear by now, I don't know how to help you.
